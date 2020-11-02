@@ -76,7 +76,7 @@ class _SongCardState extends State<SongCard> {
 
    */
 
-  Widget get dogCard {
+  Widget get songCard {
     return new Positioned(
       right: 0.0,
       child: new Container(
@@ -97,7 +97,7 @@ class _SongCardState extends State<SongCard> {
                 ),
                 new Text(
                   widget.song.location,
-                  style:TextStyle(fontSize: 15.0),
+                  style:TextStyle(fontSize: 15.0)
                   /*style: Theme.of(context).textTheme.subhead,*/
                 ),
                 new Row(
@@ -130,7 +130,7 @@ class _SongCardState extends State<SongCard> {
           height: 115.0,
           child: new Stack(
             children: <Widget>[
-              dogCard,
+              songCard,
               new Positioned(top: 5, child: songImage),
             ],
           ),
