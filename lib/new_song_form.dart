@@ -11,7 +11,7 @@ class _AddSongFormPageState extends State<AddSongFormPage> {
   TextEditingController locationController = new TextEditingController();
   TextEditingController descriptionController = new TextEditingController();
 
-  void submitPup(BuildContext context) {
+  void submitSong(BuildContext context) {
     if (nameController.text.isEmpty) {
       Scaffold.of(context).showSnackBar(new SnackBar(
         backgroundColor: Colors.redAccent,
@@ -76,7 +76,7 @@ class _AddSongFormPageState extends State<AddSongFormPage> {
               child: new Builder(
                 builder: (context) {
                   return new RaisedButton(
-                    onPressed: () => submitPup(context),
+                    onPressed: () => submitSong(context),
                     color: Colors.transparent,
                     child: new Text('Submit Song'),
                   );
